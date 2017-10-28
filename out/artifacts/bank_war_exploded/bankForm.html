@@ -1,0 +1,105 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="style.css">
+        <!--<script src="jquery_3.1.1_jquery.min.js"></script>-->
+        <!--<script>-->
+
+            <!--$(document).ready(function () {-->
+                <!--$("input[type=text").prop("disabled", true);-->
+                <!--$("#btn1").click(function () {-->
+                    <!--if ($("input[name=number]").val() === "") {-->
+                        <!--$("input[name=number]").prop("disabled", false);-->
+                        <!--$(".b").hide();-->
+                        <!--$("#btn1").css("width", "96%");-->
+                        <!--$("#btn1").show();-->
+                        <!--$("#btn5").show();-->
+                    <!--} else {-->
+                        <!--$("#mform").submit(function (event) {-->
+                            <!--event.preventDefault();-->
+                            <!--$this = $(this);-->
+                            <!--var number = $("input[name=number]").val();-->
+                            <!--var url = $this.attr('action') + '?number=' + number + '&' + 'operate=find';-->
+                            <!--window.location.href = url;-->
+                        <!--});-->
+                        <!--$("#mform").submit();-->
+                        <!--$("#btn1").hide();-->
+                    <!--}-->
+                <!--});-->
+                <!--$("#btn2").click(function () {-->
+                    <!--if ($("input[name=number]").val() === "") {-->
+                        <!--$("input").prop("disabled", false);-->
+                        <!--$(".b").hide();-->
+                        <!--$("#btn2").css("width", "96%");-->
+                        <!--$("#btn2").show();-->
+                        <!--$("#btn5").show();-->
+                    <!--} else {-->
+                        <!--$("#mform").submit(function (event) {-->
+                            <!--event.preventDefault();-->
+                            <!--$this = $(this);-->
+                            <!--var number = $("input[name=number]").val();-->
+                            <!--var owner = $("input[name=owner]").val();-->
+                            <!--var balance = $("input[name=balance]").val();-->
+                            <!--var url = $this.attr('action') + '?number=' + number + '&' + 'owner=' + owner + '&' + 'balance=' + balance + '&' + 'operate=create';-->
+                            <!--window.location.href = url;-->
+                        <!--});-->
+                        <!--$("#mform").submit();-->
+                        <!--$("#btn2").hide();-->
+                    <!--}-->
+                <!--});-->
+                <!--$("#btn3").click(function () {-->
+                    <!--if ($("input[name=number]").val() === "") {-->
+                        <!--$("input[name=number]").prop("disabled", false);-->
+                        <!--$(".b").hide();-->
+                        <!--$("#btn3").css("width", "96%");-->
+                        <!--$("#btn3").show();-->
+                        <!--$("#btn5").show();-->
+                    <!--} else {-->
+                        <!--$("#mform").submit(function (event) {-->
+                            <!--event.preventDefault();-->
+                            <!--$this = $(this);-->
+                            <!--var number = $("input[name=number]").val();-->
+                            <!--var url = $this.attr('action') + '?number=' + number + '&' + 'operate=delete';-->
+                            <!--window.location.href = url;-->
+                        <!--});-->
+                        <!--$("#mform").submit();-->
+                        <!--$("#btn3").hide();-->
+                    <!--}-->
+                <!--});-->
+                <!--$("#btn4").click(function () {-->
+                    <!--if ($("input[name=number]").val() === "") {-->
+                        <!--$("input").prop("disabled", false);-->
+                        <!--$(".b").hide();-->
+                        <!--$("#btn4").css("width", "96%");-->
+                        <!--$("#btn4").show();-->
+                        <!--$("#btn5").show();-->
+                    <!--} else {-->
+                        <!--$("#mform").submit(function (event) {-->
+                            <!--event.preventDefault();-->
+                            <!--$this = $(this);-->
+                            <!--var number = $("input[name=number]").val();-->
+                            <!--var owner = $("input[name=owner]").val();-->
+                            <!--var balance = $("input[name=balance]").val();-->
+                            <!--var url = $this.attr('action') + '?number=' + number + '&' + 'owner=' + owner + '&' + 'balance=' + balance + '&' + 'operate=update';-->
+                            <!--window.location.href = url;-->
+                        <!--});-->
+                        <!--$("#mform").submit();-->
+                        <!--$("#btn4").hide();-->
+                    <!--}-->
+                <!--});-->
+            <!--});-->
+        <!--</script>-->
+    </head>
+
+
+    <body>
+
+        <form id="mform" name="mainform" action="HtmlCRUDServlet" method="GET" >
+            <p>Number:  <input type="text" name="number" ></p>  
+            <p>Owner:   <input type="text" name="owner"></p> 
+            <p>Balance: <input type="text" name="balance"></p>
+            <button id="btn5" name="back" type="submit">Insert</button>
+
+        </form>
+
+    </body>
+</html>
